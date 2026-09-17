@@ -35,3 +35,22 @@ def main():
             break
 
         print("Error: Please enter exactly 12 digits.")
+    first_11 = upc[:11]
+    actual_check_digit = int(upc[11])
+
+    print()
+    print(f"The first 11 digits are '{first_11}'.")
+    print(f"The provided check digit is '{actual_check_digit}'.")
+    print()
+
+    print("Calculating...")
+
+    expected_check_digit = find_UPC(first_11)
+
+    print(f"The expected check digit is {expected_check_digit}.")
+    print()
+
+    if expected_check_digit == actual_check_digit:
+        print("This is a VALID UPC.")
+    else:
+        print("This is an INVALID UPC.")
