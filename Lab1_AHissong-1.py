@@ -54,3 +54,5 @@ def main():
         print("This is a VALID UPC.")
     else:
         print("This is an INVALID UPC.")
+if __name__ == "__main__":
+    main()
