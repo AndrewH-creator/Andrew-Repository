@@ -42,3 +42,23 @@ def main():
             player2.win_coin()
             player1.lose_coin()
             print("...No Match! Player 2 wins a coin.")
+
+        print(f"\n{player1.get_name()} has {player1.get_wallet()} coins.")
+        print(f"{player2.get_name()} has {player2.get_wallet()} coins.")
+
+        play_again = input("\nDo you want to toss the coins? (y/n): ")
+
+    print("\n--- Final Score ---")
+    print(f"{player1.get_name()}: {player1.get_wallet()}")
+    print(f"{player2.get_name()}: {player2.get_wallet()}")
+
+    if player1.get_wallet() > player2.get_wallet():
+        print("Player 1 has more coins!")
+    elif player2.get_wallet() > player1.get_wallet():
+        print("Player 2 has more coins!")
+    else:
+        print("It's a draw!")
+
+
+if __name__ == "__main__":
+    main()
