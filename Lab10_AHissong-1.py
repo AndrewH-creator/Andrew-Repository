@@ -47,3 +47,10 @@ class WordAnalyzer:
         except FileNotFoundError:
             print(f"File not found: {self.__filepath}")
             return False
+
+    def print_report(self):
+        """Print the word frequency report alphabetically."""
+        sorted_words = sorted(self.__frequencies.keys())
+
+        for word in sorted_words:
+            print(f"{word:<15} :: {self.__frequencies[word]}")
