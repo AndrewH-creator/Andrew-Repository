@@ -6,24 +6,23 @@ Purpose: Find the sum of all even-valued Fibonacci terms
 Date: October 3, 2026
 """
 
-# Start with the first two Fibonacci numbers
+
 first = 1
 second = 2
 
-# Keep track of the sum of even Fibonacci numbers
+
 even_sum = 0
 
-# Continue while the Fibonacci number does not exceed 4,000,000
+
 while first <= 4000000:
 
-    # Add the number to the sum if it is even
     if first % 2 == 0:
         even_sum += first
 
-    # Generate the next Fibonacci number
+  
     next_number = first + second
     first = second
     second = next_number
 
-# Display the answer
+
 print("The sum of the even Fibonacci numbers is:", even_sum)
