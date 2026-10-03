@@ -54,3 +54,29 @@ class WordAnalyzer:
 
         for word in sorted_words:
             print(f"{word:<15} :: {self.__frequencies[word]}")
+
+
+def main():
+    """Run the Word Analyzer menu."""
+    files = {
+        "1": "princess_mars.txt",
+        "2": "Tarzan.txt",
+        "3": "treasure_island.txt",
+        "4": "monte_cristo.txt"
+    }
+
+    file_names = {
+        "1": "Princess of Mars",
+        "2": "Tarzan",
+        "3": "Treasure Island",
+        "4": "Monte Cristo"
+    }
+
+    while True:
+        print("\n--- Word Analyzer ---")
+        print("Please select a file to analyze:")
+        print("1. Princess of Mars")
+        print("2. Tarzan")
+        print("3. Treasure Island")
+        print("4. Monte Cristo")
+        print("5. Exit")
