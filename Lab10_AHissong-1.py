@@ -80,3 +80,27 @@ def main():
         print("3. Treasure Island")
         print("4. Monte Cristo")
         print("5. Exit")
+
+
+ choice = input("\nEnter your choice (1-5): ").strip()
+
+        if choice == "5":
+            print("\nGoodbye!")
+            break
+
+        if choice not in files:
+            print("\nInvalid choice. Please select from 1-5.")
+            input("\nPress Enter to return to the menu...")
+            continue
+
+        filepath = Path(files[choice])
+
+        print(f"\nProcessing '{filepath.name}'...")
+        print(f"Selected: {file_names[choice]}\n")
+
+        analyzer = WordAnalyzer(filepath)
+
+        if analyzer.process_file():
+            analyzer.print_report()
+
+        input("\nPress Enter to return to the menu...")
