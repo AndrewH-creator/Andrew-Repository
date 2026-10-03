@@ -41,3 +41,9 @@ class WordAnalyzer:
                             self.__frequencies[word] += 1
                         else:
                             self.__frequencies[word] = 1
+
+            return True
+
+        except FileNotFoundError:
+            print(f"File not found: {self.__filepath}")
+            return False
