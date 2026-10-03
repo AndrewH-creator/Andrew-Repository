@@ -7,3 +7,15 @@ Purpose: This program allows the user to select one of four predefined
 Starter Code: None. Created for the Lab 10 assignment.
 Date: October 3, 2026
 """
+
+from pathlib import Path
+import string
+
+
+class WordAnalyzer:
+    """Analyze a text file and count the frequency of each word."""
+
+    def __init__(self, filepath):
+        """Initialize the WordAnalyzer with a file path."""
+        self.__filepath = Path(filepath)
+        self.__frequencies = {}
