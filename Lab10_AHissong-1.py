@@ -81,8 +81,7 @@ def main():
         print("4. Monte Cristo")
         print("5. Exit")
 
-
- choice = input("\nEnter your choice (1-5): ").strip()
+        choice = input("\nEnter your choice (1-5): ").strip()
 
         if choice == "5":
             print("\nGoodbye!")
@@ -104,3 +103,7 @@ def main():
             analyzer.print_report()
 
         input("\nPress Enter to return to the menu...")
+
+
+if __name__ == "__main__":
+    main()
