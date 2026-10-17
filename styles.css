@@ -1,0 +1,40 @@
+
+/* Name: Andrew Hissong */
+/* Assignment: Exercise 5 - Random CSS Rules on Display! */
+/* Date: October 17, 2026 */
+
+.bcolor {
+    background-color: gray;
+    color: black;
+    padding: 20px;
+    border: 4px solid black;
+    width: 500px;
+}
+
+#wrapper {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.dots {
+    border-bottom: 3px dotted black;
+    margin: 25px;
+    width: 500px;
+}
+
+.round {
+    border-radius: 12px;
+}
+
+.shdwbx {
+    box-shadow: 8px 8px 10px red;
+}
+
+.opwash {
+    background-color: yellow;
+    color: black;
+    width: 500px;
+    border: 3px solid gray;
+    margin-top: 75px;
+    opacity: 0.7;
+}
