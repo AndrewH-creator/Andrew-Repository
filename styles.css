@@ -1,14 +1,10 @@
 
 /* Name: Andrew Hissong */
-/* Assignment: Exercise 5 - Random CSS Rules on Display! */
+/* Assignment: Exercise 5 */
 /* Date: October 17, 2026 */
 
-.bcolor {
-    background-color: gray;
-    color: black;
-    padding: 20px;
-    border: 4px solid black;
-    width: 500px;
+body {
+    font-family: Arial, sans-serif;
 }
 
 #wrapper {
@@ -22,12 +18,20 @@
     width: 500px;
 }
 
+.bcolor {
+    background-color: gray;
+    color: black;
+    padding: 20px;
+    border: 4px solid black;
+    width: 500px;
+}
+
 .round {
-    border-radius: 12px;
+    border-radius: 20px;
 }
 
 .shdwbx {
-    box-shadow: 8px 8px 10px red;
+    box-shadow: 10px 10px 12px rgba(200, 0, 0, 0.7);
 }
 
 .opwash {
@@ -38,3 +42,4 @@
     margin-top: 75px;
     opacity: 0.7;
 }
+
