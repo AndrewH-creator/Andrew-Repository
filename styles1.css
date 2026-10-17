@@ -226,3 +226,230 @@ footer p {
         font-size: 23px;
     }
 }
+
+
+
+/* =================================
+   HOMEPAGE-ONLY DESIGN
+   ================================= */
+
+.home-page {
+    background-color: #101820;
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Homepage banner */
+.home-page .home-header {
+    background: linear-gradient(135deg, #101820, #174b35);
+    color: #ffffff;
+    text-align: center;
+    padding: 65px 20px;
+    border-bottom: 5px solid #39d353;
+}
+
+.home-page .home-logo {
+    color: #39d353;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 5px;
+}
+
+.home-page .home-header h1 {
+    color: #ffffff;
+    font-size: 46px;
+    margin: 20px 0;
+}
+
+.home-page .home-header p {
+    line-height: 1.7;
+}
+
+/* Homepage navigation */
+.home-page nav {
+    background-color: #1b2a36;
+    border-bottom: 1px solid #344957;
+}
+
+.home-page nav a {
+    color: #ffffff;
+}
+
+.home-page nav a:hover,
+.home-page nav a:focus {
+    background-color: #39d353;
+    color: #101820;
+}
+
+/* Remove the white panel from the general main style */
+.home-page .home-main {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px 24px;
+    background-color: #101820;
+    color: #ffffff;
+    border-radius: 0;
+}
+
+.home-page .home-main h2 {
+    color: #39d353;
+    border-bottom: none;
+    font-size: 30px;
+}
+
+.home-page .home-main p {
+    line-height: 1.8;
+}
+
+/* Large welcome section */
+.home-page .home-hero {
+    background: linear-gradient(120deg, #183d30, #20394b);
+    padding: 65px 35px;
+    border-radius: 14px;
+    border-left: 6px solid #39d353;
+    margin-bottom: 35px;
+}
+
+.home-page .home-hero h2 {
+    color: #ffffff;
+    font-size: 42px;
+    margin-top: 10px;
+}
+
+.home-page .home-hero p {
+    max-width: 700px;
+}
+
+.home-page .home-label {
+    color: #39d353;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+/* Bright action buttons */
+.home-page .home-button {
+    display: inline-block;
+    margin-top: 18px;
+    padding: 13px 22px;
+    background-color: #39d353;
+    color: #101820;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 6px;
+}
+
+.home-page .home-button:hover,
+.home-page .home-button:focus {
+    background-color: #ffffff;
+    color: #101820;
+}
+
+/* Intro section */
+.home-page .home-intro {
+    padding: 20px 10px;
+    margin-bottom: 25px;
+}
+
+/* Three colored information cards */
+.home-page .home-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 22px;
+    margin: 30px 0 40px;
+}
+
+.home-page .home-card {
+    flex: 1 1 250px;
+    padding: 25px;
+    color: #ffffff;
+    border-radius: 12px;
+    border-top: 5px solid #ffffff;
+}
+
+.home-page .home-card h3 {
+    color: #ffffff;
+    font-size: 22px;
+}
+
+.home-page .home-card p {
+    color: #f0f4f7;
+}
+
+.home-page .home-card a {
+    color: #ffffff;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.home-page .home-card a:hover,
+.home-page .home-card a:focus {
+    color: #d7ffe0;
+}
+
+.home-page .home-card-green {
+    background-color: #176b45;
+    border-top-color: #39d353;
+}
+
+.home-page .home-card-blue {
+    background-color: #245579;
+    border-top-color: #61c7ff;
+}
+
+.home-page .home-card-orange {
+    background-color: #8b4b22;
+    border-top-color: #ffbd69;
+}
+
+.home-page .home-icon {
+    font-size: 30px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+/* Bottom call-to-action section */
+.home-page .home-challenge {
+    text-align: center;
+    background-color: #1b2a36;
+    padding: 35px 25px;
+    border-radius: 12px;
+    margin: 35px 0;
+}
+
+.home-page .home-challenge h2 {
+    color: #39d353;
+}
+
+/* Homepage footer */
+.home-page .home-footer {
+    background-color: #080d12;
+    color: #ffffff;
+    text-align: center;
+    padding: 25px;
+    border-top: 4px solid #39d353;
+}
+
+/* Homepage on mobile screens */
+@media screen and (max-width: 600px) {
+    .home-page .home-header h1 {
+        font-size: 32px;
+    }
+
+    .home-page .home-hero {
+        padding: 35px 20px;
+    }
+
+    .home-page .home-hero h2 {
+        font-size: 30px;
+    }
+
+    .home-page .home-main {
+        padding: 20px 14px;
+    }
+
+    .home-page .home-cards {
+        flex-direction: column;
+    }
+}
+
