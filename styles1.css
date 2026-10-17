@@ -2,11 +2,14 @@
 /*
 Name: Andrew Hissong
 Project: Project 3 - Fitness Guide Website
-Purpose: Styles all pages of the Fitness Guide website
+Purpose: Styles the homepage and all supporting pages.
 Date: October 17, 2026
 */
 
-/* General page settings */
+/* =================================
+   GENERAL PAGE SETTINGS
+   ================================= */
+
 * {
     box-sizing: border-box;
 }
@@ -21,7 +24,10 @@ body {
     line-height: 1.7;
 }
 
-/* Main heading area */
+/* =================================
+   HEADER
+   ================================= */
+
 header {
     background-color: #101820;
     color: #ffffff;
@@ -41,7 +47,10 @@ header p {
     margin-bottom: 0;
 }
 
-/* Navigation menu */
+/* =================================
+   NAVIGATION MENU
+   ================================= */
+
 nav {
     background-color: #263746;
     padding: 15px;
@@ -64,7 +73,10 @@ nav a:focus {
     color: #101820;
 }
 
-/* Main content area */
+/* =================================
+   MAIN CONTENT
+   ================================= */
+
 main {
     max-width: 1100px;
     width: 90%;
@@ -75,7 +87,10 @@ main {
     border-radius: 10px;
 }
 
-/* Headings */
+/* =================================
+   HEADINGS
+   ================================= */
+
 h1,
 h2,
 h3 {
@@ -100,7 +115,10 @@ main h3 {
     font-size: 21px;
 }
 
-/* Paragraphs and lists */
+/* =================================
+   PARAGRAPHS AND LISTS
+   ================================= */
+
 p {
     margin-bottom: 18px;
 }
@@ -114,7 +132,10 @@ li {
     margin-bottom: 8px;
 }
 
-/* Links in the main content */
+/* =================================
+   CONTENT LINKS
+   ================================= */
+
 main a {
     color: #176b32;
     font-weight: bold;
@@ -125,14 +146,20 @@ main a:focus {
     color: #0b4220;
 }
 
-/* Images */
+/* =================================
+   IMAGES
+   ================================= */
+
 img {
     max-width: 100%;
     height: auto;
     border-radius: 8px;
 }
 
-/* Forms */
+/* =================================
+   FORMS
+   ================================= */
+
 form {
     max-width: 700px;
     margin: 20px 0;
@@ -188,7 +215,10 @@ input[type="submit"]:hover {
     background-color: #0b4220;
 }
 
-/* Footer */
+/* =================================
+   GENERAL FOOTER
+   ================================= */
+
 footer {
     background-color: #101820;
     color: #ffffff;
@@ -202,7 +232,10 @@ footer p {
     margin: 0;
 }
 
-/* Responsive layout for phones and small screens */
+/* =================================
+   GENERAL RESPONSIVE DESIGN
+   ================================= */
+
 @media screen and (max-width: 600px) {
     header h1 {
         font-size: 29px;
@@ -227,8 +260,6 @@ footer p {
     }
 }
 
-
-
 /* =================================
    HOMEPAGE-ONLY DESIGN
    ================================= */
@@ -240,6 +271,7 @@ footer p {
 }
 
 /* Homepage banner */
+
 .home-page .home-header {
     background: linear-gradient(135deg, #101820, #174b35);
     color: #ffffff;
@@ -266,6 +298,7 @@ footer p {
 }
 
 /* Homepage navigation */
+
 .home-page nav {
     background-color: #1b2a36;
     border-bottom: 1px solid #344957;
@@ -281,7 +314,8 @@ footer p {
     color: #101820;
 }
 
-/* Remove the white panel from the general main style */
+/* Homepage main content */
+
 .home-page .home-main {
     width: 100%;
     max-width: 1200px;
@@ -302,7 +336,8 @@ footer p {
     line-height: 1.8;
 }
 
-/* Large welcome section */
+/* Homepage welcome section */
+
 .home-page .home-hero {
     background: linear-gradient(120deg, #183d30, #20394b);
     padding: 65px 35px;
@@ -327,7 +362,8 @@ footer p {
     letter-spacing: 2px;
 }
 
-/* Bright action buttons */
+/* Homepage buttons */
+
 .home-page .home-button {
     display: inline-block;
     margin-top: 18px;
@@ -345,13 +381,15 @@ footer p {
     color: #101820;
 }
 
-/* Intro section */
+/* Homepage introduction */
+
 .home-page .home-intro {
     padding: 20px 10px;
     margin-bottom: 25px;
 }
 
-/* Three colored information cards */
+/* Homepage information cards */
+
 .home-page .home-cards {
     display: flex;
     flex-wrap: wrap;
@@ -408,7 +446,8 @@ footer p {
     color: #ffffff;
 }
 
-/* Bottom call-to-action section */
+/* Homepage final call-to-action */
+
 .home-page .home-challenge {
     text-align: center;
     background-color: #1b2a36;
@@ -422,6 +461,7 @@ footer p {
 }
 
 /* Homepage footer */
+
 .home-page .home-footer {
     background-color: #080d12;
     color: #ffffff;
@@ -430,7 +470,8 @@ footer p {
     border-top: 4px solid #39d353;
 }
 
-/* Homepage on mobile screens */
+/* Homepage mobile layout */
+
 @media screen and (max-width: 600px) {
     .home-page .home-header h1 {
         font-size: 32px;
@@ -452,4 +493,3 @@ footer p {
         flex-direction: column;
     }
 }
-
